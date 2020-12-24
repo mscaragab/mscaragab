@@ -1,0 +1,8 @@
+a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #EDE7F6;
+}
