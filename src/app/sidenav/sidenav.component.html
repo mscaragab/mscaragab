@@ -1,7 +1,10 @@
 <mat-nav-list>
-  <!-- <a (click)='onClose()' mat-list-item routerLink='/feed'>Feed</a>
-  <a (click)='onClose()' mat-list-item routerLink='/help'>Help</a>
-  <mat-list-item>
-    <button fxShow.gt-xs style="margin-left: 25px;" mat-raised-button (click)='onEnableNotifications()' color='accent'>ENABLE NOTIFICATIONS</button>
-  </mat-list-item> -->
+  <a mat-list-item (click)="onClose()" routerLink="/projects" routerLinkActive="active">
+    <mat-icon style="margin-left: 2px; margin-right: 5px;">list</mat-icon> Projects
+  </a>
+  <a mat-list-item (click)="onClose()" routerLink="/resume" routerLinkActive="active">
+    <mat-icon style="margin-left: 2px; margin-right: 5px;">launch</mat-icon> Resume
+  </a><a mat-list-item (click)="onClose()" href="https://github.com/mscaragab" target="_blank">
+    <img mat-list-icon src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'> GitHub
+  </a>
 </mat-nav-list>

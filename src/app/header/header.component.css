@@ -3,6 +3,8 @@ a {
   color: white;
   text-decoration: none;
 }
-a:hover {
-  color: #EDE7F6;
+a:hover,
+a:active,
+a.active {
+  color: #aaf1fc;
 }

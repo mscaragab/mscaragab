@@ -1,0 +1,21 @@
+/* @media (min-width: 600px) {
+  mat-card {
+    width: 500px;
+  }
+}
+
+@media (max-width: 599px) {
+  mat-card {
+    width: 90%;
+  }
+} */
+
+mat-card {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+img {
+  max-width: 700px;
+}
