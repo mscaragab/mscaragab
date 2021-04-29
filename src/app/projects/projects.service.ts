@@ -23,6 +23,15 @@ export class ProjectsService {
 			'https://ng-pwagram.netlify.app/'
 		),
 		new Project(
+			'Shopping Store',
+			'Build Angular Shopping Store Course Project.',
+			'Angular, Angular Materila, and RxJS',
+			'This is the project of my course Build Angular Shopping Store. (available at Udemy among other courses)',
+			'assets/img/shopping-store.png',
+			'',
+			'https://shop25.netlify.app/'
+		),
+		new Project(
 			'Fitness Tracker',
 			'Angular Full App Course Project.',
 			'Angular Materila, Angularfire, NgRx and Firestore',
