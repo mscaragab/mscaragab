@@ -1,10 +1,14 @@
 img {
 	box-sizing: border-box;
+	padding: 10px;
 }
-
+.container {
+	display: flex;
+	flex-direction: column;
+}
 mat-card {
 	cursor: pointer;
-  margin: 0px auto;
+	margin: 20px auto;
 }
 
 mat-card:focus {
@@ -14,21 +18,17 @@ mat-card:focus {
 mat-card:hover {
 	opacity: 0.9;
 }
-
-@media (min-width: 600px) {
-	mat-card {
-		width: 500px;
-	}
-	img {
-		padding: 15px;
-	}
+mat-card-title {
+	font-size: large;
+	height: 60px;
 }
 
-@media (max-width: 599px) {
-	mat-card {
-		width: 90%;
+@media (min-width: 1024px) {
+	.container {
+		flex-direction: row;
 	}
-	img {
-		padding: 10px;
+	mat-card {
+		width: 500px;
+		margin: 10px;
 	}
 }
