@@ -26,7 +26,7 @@ export class ProjectsService {
 			'Shopping Store',
 			'Build Angular Shopping Store Course Project.',
 			'Angular, Angular Materila, and RxJS',
-			'This is the project of my course Build Angular Shopping Store. (available at Udemy among other courses)',
+			'This is the project the course Build Online E-Commerce Shopping Store Using Angular & RxJS (2021 Edition)',
 			'assets/images/projects/shopping-store.png',
 			'',
 			'https://demo289.netlify.app/'
