@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color-400);
+  color: var(--primary-contrast-color);
+  padding: 50px 10px;
+}
+.container > div {
+  padding: 10px 5px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}

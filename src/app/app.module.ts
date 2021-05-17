@@ -12,6 +12,8 @@ import { FlexLayoutModule } from '@angular/flex-layout'
 import { ProjectsComponent } from './projects/projects.component'
 import { ProjectComponent } from './projects/project/project.component'
 import { ResumeComponent } from './resume/resume.component'
+import { FirstFooterComponent } from './first-footer/first-footer.component'
+import { SecondFooterComponent } from './second-footer/second-footer.component'
 
 @NgModule({
 	declarations: [
@@ -22,6 +24,8 @@ import { ResumeComponent } from './resume/resume.component'
 		ProjectsComponent,
 		ProjectComponent,
 		ResumeComponent,
+		FirstFooterComponent,
+		SecondFooterComponent,
 	],
 	imports: [
 		BrowserModule,

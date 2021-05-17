@@ -4,7 +4,7 @@ export class Project {
     public description: string,
     public technologiesUsed: string,
     public note: string,
-    public imagePath: string,
+    public imageUrl: string,
     public githubRepositoryUrl: string,
     public liveDemoUrl: string
   ) {}

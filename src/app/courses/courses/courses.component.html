@@ -1,0 +1,13 @@
+<div style="margin: 10px;" fxLayout='column' fxLayout.gt-xs='row' fxLayoutAlign='center center'
+  fxLayoutAlign.gt-xs='center center' fxLayoutGap='10px' fxLayoutGap.gt-xs='15px'>
+  <mat-card *ngFor="let course of courses; let i = index" [routerLink]="[course.courseUrl]" routerLinkActive="active">
+    <mat-card-title>
+      {{ course.name }}
+    </mat-card-title>
+
+    <img mat-card-image [src]="course.imageUrl" alt="{{ course.name }}">
+    <mat-card-content>
+      <p>{{ course.description }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

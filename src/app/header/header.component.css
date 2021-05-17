@@ -1,10 +1,13 @@
 a {
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
 }
 a:hover,
 a:active,
 a.active {
-  color: #aaf1fc;
+	color: #aaf1fc;
+}
+.linkedin {
+	width: 100px;
 }

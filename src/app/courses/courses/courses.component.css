@@ -1,0 +1,34 @@
+img {
+	box-sizing: border-box;
+}
+
+mat-card {
+	cursor: pointer;
+  margin: 0px auto;
+}
+
+mat-card:focus {
+	outline: none;
+}
+
+mat-card:hover {
+	opacity: 0.9;
+}
+
+@media (min-width: 600px) {
+	mat-card {
+		width: 500px;
+	}
+	img {
+		padding: 15px;
+	}
+}
+
+@media (max-width: 599px) {
+	mat-card {
+		width: 90%;
+	}
+	img {
+		padding: 10px;
+	}
+}

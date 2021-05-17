@@ -3,27 +3,27 @@
   "short_name": "Portfolio",
   "icons": [
     {
-      "src": "/assets/img/icons/checklist-96x96.png",
+      "src": "/assets/imagesicons/checklist-96x96.png",
       "type": "image/png",
       "sizes": "96x96"
     },{
-      "src": "/assets/img/icons/checklist-144x144.png",
+      "src": "/assets/imagesicons/checklist-144x144.png",
       "type": "image/png",
       "sizes": "144x144"
     },{
-      "src": "/assets/img/icons/checklist-192x192.png",
+      "src": "/assets/imagesicons/checklist-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },{
-      "src": "/assets/img/icons/checklist-256x256.png",
+      "src": "/assets/imagesicons/checklist-256x256.png",
       "type": "image/png",
       "sizes": "256x256"
     },{
-      "src": "/assets/img/icons/checklist-384x384.png",
+      "src": "/assets/imagesicons/checklist-384x384.png",
       "type": "image/png",
       "sizes": "384x384"
     },{
-      "src": "/assets/img/icons/checklist-512x512.png",
+      "src": "/assets/imagesicons/checklist-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
