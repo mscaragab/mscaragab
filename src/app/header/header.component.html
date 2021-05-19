@@ -1,24 +1,31 @@
 <mat-toolbar color='primary'>
-  <button mat-icon-button (click)='onToggle()'>
-    <mat-icon>menu</mat-icon>
-  </button>
-  <div><a routerLink='/'>Portfolio</a></div>
-  <div>
-    <div fxLayout fxLayoutGap='15px'>
-      <a mat-list-item routerLink="/courses" routerLinkActive="active">Courses
-      </a>
+  <mat-toolbar-row class="main-row">
+    <div class="container">
 
-      <a mat-list-item routerLink="/projects" routerLinkActive="active">Projects
-      </a>
+      <div>
 
-      <a mat-list-item routerLink="/books" routerLinkActive="active">Books
-      </a>
+        <button mat-icon-button type='button' (click)='onToggle()'>
+          <mat-icon>menu</mat-icon>
+        </button>
 
-      <a mat-list-item href='https://www.linkedin.com/in/mscaragab' target='_blank'>
-        LinkedIn
-      </a>
+        <button class='title' mat-flat-button color='primary' type='button' routerLink='/'>Abdelfattah Ragab</button>
+
+      </div>
+      <div class="items" *ngIf='!mobile'>
+        <button mat-button type='button' routerLink='/books'>
+          Books
+        </button>
+        <button mat-button type='button' routerLink='/courses'>
+          Courses
+        </button>
+        <button mat-button type='button' routerLink='/projects'>
+          Projects
+        </button>
+        <a mat-button [href]="'https://www.linkedin.com/in/mscaragab'">
+          LinkedIn
+        </a>
+      </div>
 
     </div>
-
-  </div>
+  </mat-toolbar-row>
 </mat-toolbar>
