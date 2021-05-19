@@ -1,9 +1,9 @@
 <mat-toolbar color='primary'>
-  <button mat-icon-button fxHide.gt-xs (click)='onToggle()'>
+  <button mat-icon-button (click)='onToggle()'>
     <mat-icon>menu</mat-icon>
   </button>
   <div><a routerLink='/'>Portfolio</a></div>
-  <div fxFlex fxLayout fxLayoutAlign='flex-end' fxHide fxShow.gt-xs>
+  <div>
     <div fxLayout fxLayoutGap='15px'>
       <a mat-list-item routerLink="/courses" routerLinkActive="active">Courses
       </a>

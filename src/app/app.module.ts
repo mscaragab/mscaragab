@@ -8,7 +8,6 @@ import { MaterialModule } from './material.module'
 import { HeaderComponent } from './header/header.component'
 import { SidenavComponent } from './sidenav/sidenav.component'
 import { NotFoundComponent } from './not-found/not-found.component'
-import { FlexLayoutModule } from '@angular/flex-layout'
 import { ProjectsComponent } from './projects/projects.component'
 import { ProjectComponent } from './projects/project/project.component'
 import { ResumeComponent } from './resume/resume.component'
@@ -32,7 +31,6 @@ import { SecondFooterComponent } from './second-footer/second-footer.component'
 		AppRoutingModule,
 		BrowserAnimationsModule,
 		MaterialModule,
-		FlexLayoutModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],
