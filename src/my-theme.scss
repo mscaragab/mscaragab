@@ -1,23 +1,24 @@
+@use '~@angular/material' as mat;
 @import "~@angular/material/theming";
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
-@include mat-core();
-$current-active-theme: $mat-blue;
+@include mat.core();
+$current-active-theme: mat.$blue-palette;
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$candy-app-primary: mat-palette($current-active-theme);
-$candy-app-accent: mat-palette($mat-pink, A200, A100, A400);
+$candy-app-primary: mat.define-palette($current-active-theme);
+$candy-app-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$candy-app-warn: mat-palette($mat-red);
+$candy-app-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as `color` or `typography`.
-$candy-app-theme: mat-light-theme(
+$candy-app-theme: mat.define-light-theme(
   (
     color: (
       primary: $candy-app-primary,
@@ -30,13 +31,13 @@ $candy-app-theme: mat-light-theme(
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($candy-app-theme);
+@include mat.all-component-themes($candy-app-theme);
 
 :root {
-  --primary-color: #{mat-color($candy-app-primary)};
-  --accent-color: #{mat-color($candy-app-accent)};
-  --primary-contrast-color: #{mat-color($candy-app-primary, default-contrast)};
-  --accent-contrast-color: #{mat-color($candy-app-accent, default-contrast)};
-  --primary-color-50: #{mat-color(mat-palette($current-active-theme, 50))};
-  --primary-color-400: #{mat-color(mat-palette($current-active-theme, 400))};
+  --primary-color: #{mat.get-color-from-palette($candy-app-primary)};
+  --accent-color: #{mat.get-color-from-palette($candy-app-accent)};
+  --primary-contrast-color: #{mat.get-color-from-palette($candy-app-primary, default-contrast)};
+  --accent-contrast-color: #{mat.get-color-from-palette($candy-app-accent, default-contrast)};
+  --primary-color-50: #{mat.get-color-from-palette(mat.define-palette($current-active-theme, 50))};
+  --primary-color-400: #{mat.get-color-from-palette(mat.define-palette($current-active-theme, 400))};
 }
