@@ -1,0 +1,47 @@
+.paypal-button {
+	width: 300px;
+	/* margin: 20px auto; */
+	line-height: 50px;
+	height: 30px;
+	margin-left: 30px;
+}
+.title {
+	margin: 10px;
+	text-align: center;
+}
+.content {
+	width: 300px;
+	font-size: medium;
+	line-height: 26px;
+	margin: 30px auto;
+}
+.action {
+	width: 300px;
+	font-size: medium;
+	margin: 10px auto;
+	margin-bottom: 30px;
+	font-weight: 500;
+	padding-left: 2px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+mat-divider {
+	width: 300px;
+	margin: 10px auto;
+}
+@media (min-width: 1024px) {
+	iframe {
+		width: 600px;
+		height: 400px;
+	}
+	.content {
+		width: 600px;
+	}
+	.action {
+		width: 600px;
+	}
+	mat-divider {
+		width: 600px;
+	}
+}

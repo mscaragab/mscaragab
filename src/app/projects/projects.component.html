@@ -1,7 +1,5 @@
-<div style="margin: 10px;" fxLayout='column' fxLayout.gt-xs='row' fxLayoutAlign='center center'
-  fxLayoutAlign.gt-xs='start center' fxLayoutGap='10px' fxLayoutGap.gt-xs='15px'>
-  <mat-card *ngFor="let project of projects; let i = index" [routerLink]="['/projects',i]"
-    routerLinkActive="active">
+<div class="container">
+  <mat-card *ngFor="let project of projects; let i = index" [routerLink]="['/projects',i]" routerLinkActive="active">
     <mat-card-title>
       {{ project.name }}
     </mat-card-title>

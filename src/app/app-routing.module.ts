@@ -8,6 +8,10 @@ import { ResumeComponent } from './resume/resume.component'
 const routes: Routes = [
 	{ path: '', redirectTo: '/projects', pathMatch: 'full' },
 	{
+		path: 'books',
+		loadChildren: () => import('./books/books.module').then(m => m.BooksModule),
+	},
+	{
 		path: 'courses',
 		loadChildren: () =>
 			import('./courses/courses.module').then(m => m.CoursesModule),

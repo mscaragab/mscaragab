@@ -1,0 +1,12 @@
+<div class="container">
+  <mat-card *ngFor="let book of books; let i = index" [routerLink]="[book.bookUrl]" routerLinkActive="active">
+    <mat-card-title>
+      {{ book.name }}
+    </mat-card-title>
+
+    <img mat-card-image [src]="book.imageUrl" alt="{{ book.name }}">
+    <mat-card-content>
+      <p>{{ book.description }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
