@@ -12,20 +12,39 @@
 
       </div>
       <div class="items" *ngIf='!mobile'>
-        <button mat-button type='button' routerLink='/books'>
+        <a mat-button type='button' routerLinkActive='active' routerLink='/books'>
           Books
-        </button>
-        <button mat-button type='button' routerLink='/courses'>
+        </a>
+        <a mat-button type='button' routerLinkActive='active' routerLink='/courses'>
           Courses
-        </button>
-        <button mat-button type='button' routerLink='/projects'>
+        </a>
+        <a mat-button type='button' routerLinkActive='active' routerLink='/projects'>
           Projects
-        </button>
+        </a>
         <a mat-button [href]="'https://www.linkedin.com/in/mscaragab'">
           LinkedIn
         </a>
       </div>
 
     </div>
+  </mat-toolbar-row>
+  <mat-toolbar-row *ngIf='mobile'>
+    <div class="icons">
+      <a mat-list-item (click)="onClose()" routerLinkActive='active' routerLink="/books">
+        <mat-icon>library_books</mat-icon>
+      </a>
+      <a mat-list-item (click)="onClose()" routerLinkActive='active' routerLink="/courses">
+        <mat-icon>school</mat-icon>
+
+      </a>
+      <a mat-list-item (click)="onClose()" routerLinkActive='active' routerLink="/projects">
+        <mat-icon>wysiwyg</mat-icon>
+
+      </a>
+      <a mat-list-item routerLinkActive='active' [href]="'https://www.linkedin.com/in/mscaragab'">
+        <mat-icon>public</mat-icon>
+      </a>
+    </div>
+
   </mat-toolbar-row>
 </mat-toolbar>

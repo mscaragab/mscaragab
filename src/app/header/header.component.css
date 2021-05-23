@@ -10,7 +10,8 @@ mat-toolbar {
 }
 a.active,
 a.focus,
-a:focus {
+a:focus,
+a:hover {
 	color: var(--accent-color);
 }
 .title {
@@ -21,6 +22,9 @@ a:focus {
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
+}
+.items > a {
+	font-size: medium;
 }
 .icon {
 	display: flex;
@@ -36,4 +40,18 @@ a:focus {
 }
 .full {
 	width: 100%;
+}
+.icons {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0px auto;
+}
+a {
+	color: var(--primary-contrast-color);
+}
+.icons mat-icon {
+	color: inherit;
 }

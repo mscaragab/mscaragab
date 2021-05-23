@@ -1,0 +1,27 @@
+.container {
+	width: 90%;
+	margin: 0px auto;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.container > div {
+	margin: 5px auto;
+	width: calc(100% - 20px);
+}
+.title {
+	font-size: x-large;
+	color: var(--primary-color);
+}
+.subtitle {
+	font-size: large;
+	color: var(--primary-color-300);
+}
+.description {
+	padding-top: 5px;
+}
+@media (min-width: 1024px) {
+	.container {
+		width: 50%;
+	}
+}

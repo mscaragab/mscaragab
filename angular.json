@@ -18,15 +18,7 @@
 						"main": "src/main.ts",
 						"polyfills": "src/polyfills.ts",
 						"tsConfig": "tsconfig.app.json",
-						"assets": [
-							"src/favicon.ico",
-							"src/assets",
-							{
-								"glob": "_redirects",
-								"input": "src",
-								"output": "/"
-							}
-						],
+						"assets": ["src/favicon.ico", "src/assets"],
 						"styles": ["src/my-theme.scss", "src/styles.css"],
 						"scripts": [],
 						"vendorChunk": true,

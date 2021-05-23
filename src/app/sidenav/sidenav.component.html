@@ -1,14 +1,20 @@
 <mat-nav-list>
-  <a mat-list-item (click)="onClose()" routerLink="/books">
-    Books
+  <a mat-list-item (click)="onClose()" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive='active'
+    routerLink="/">
+    <mat-icon>home</mat-icon>Home
   </a>
-  <a mat-list-item (click)="onClose()" routerLink="/courses">
+  <a mat-list-item (click)="onClose()" routerLinkActive='active' routerLink="/books">
+    <mat-icon>library_books</mat-icon>Books
+  </a>
+  <a mat-list-item (click)="onClose()" routerLinkActive='active' routerLink="/courses">
+    <mat-icon>school</mat-icon>
     Courses
   </a>
-  <a mat-list-item (click)="onClose()" routerLink="/projects">
+  <a mat-list-item (click)="onClose()" routerLinkActive='active' routerLink="/projects">
+    <mat-icon>wysiwyg</mat-icon>
     Projects
   </a>
-  <a mat-list-item [href]="'https://www.linkedin.com/in/mscaragab'">
-    LinkedIn
+  <a mat-list-item routerLinkActive='active' [href]="'https://www.linkedin.com/in/mscaragab'">
+    <mat-icon>public</mat-icon>LinkedIn
   </a>
 </mat-nav-list>

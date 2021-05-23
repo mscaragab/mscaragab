@@ -1,5 +1,9 @@
-a:hover,
-a:active,
-a.active {
-  color: #057cf7;
+a.active,
+a.focus,
+a:focus,
+a:hover {
+	color: var(--accent-color);
+}
+mat-icon {
+	margin-right: 10px;
 }

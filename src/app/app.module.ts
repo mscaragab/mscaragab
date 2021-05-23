@@ -12,7 +12,8 @@ import { ProjectsComponent } from './projects/projects.component'
 import { ProjectComponent } from './projects/project/project.component'
 import { ResumeComponent } from './resume/resume.component'
 import { FirstFooterComponent } from './first-footer/first-footer.component'
-import { SecondFooterComponent } from './second-footer/second-footer.component'
+import { SecondFooterComponent } from './second-footer/second-footer.component';
+import { HomeComponent } from './home/home.component'
 
 @NgModule({
 	declarations: [
@@ -25,6 +26,7 @@ import { SecondFooterComponent } from './second-footer/second-footer.component'
 		ResumeComponent,
 		FirstFooterComponent,
 		SecondFooterComponent,
+  HomeComponent,
 	],
 	imports: [
 		BrowserModule,
